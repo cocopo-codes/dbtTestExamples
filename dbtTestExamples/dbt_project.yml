@@ -5,7 +5,7 @@ version: '1.0.0'
 config-version: 2
 
 # This setting configures which "profile" dbt uses for this project.
-profile: 'default'
+profile: 'dbt_example_db'
 
 # These configurations specify where dbt should look for different types of files.
 source-paths: ["models"]
@@ -20,10 +20,9 @@ clean-targets:         # directories to be removed by `dbt clean`
     - "target"
     - "dbt_modules"
 
-
 # Building all models in the game_stats directory
 models:
   dbtTestExamples:
       # Applies to all files under models/game_stats/
       game_stats:
-          materialized: view
+          materialized: schema
