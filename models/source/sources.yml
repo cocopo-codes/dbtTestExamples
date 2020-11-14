@@ -4,6 +4,7 @@ version: 2
 sources:
   - name: seed_db
     database: starlit-complex-295117
+    schema: postgres
 
     quoting:
       database: false
@@ -11,7 +12,7 @@ sources:
       identifier: false
 
     tables:
-      - name: games_numbers
+      - name: game_log
         columns:
           - name: username
             tests:
@@ -49,7 +50,7 @@ sources:
             tests:
               - not_null
 
-      - name: users
+      - name: games_users
         columns:
           - name: username
             tests:
