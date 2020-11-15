@@ -1,10 +1,13 @@
 Welcome to the dbtTestExamples project!
 
 ### Introduction and Critical Setup Notes
-- This project has some simple dbt models along with related tests. Its purpose is to provide users with some quick examples of dbt schema and data tests. 
-- In order to create this dbt model, you will want to install [dbt](https://docs.getdbt.com/docs/introduction) before you clone this repository
-- This also requires an installation of a PostgreSQL BigQuery server where you will be able to generate your tables and test your models. I used [this great tutorial](https://dataschool.com/sql-optimization/start-modeling-data/) to set up my PostgreSQL container on BigQuery with dbt
-- The project has custom configuration in the profiles.yml file for dbt and BigQuery, which is covered in [dbt Profiles.yml documentation](https://docs.getdbt.com/reference/profiles.yml/) if the tutorial isn't enough
+This project has some simple dbt models along with related tests. Its purpose is to provide users with some quick examples of dbt schema and data tests. 
+
+In order to create this dbt model, you will want to install [dbt](https://docs.getdbt.com/docs/introduction) before you clone this repository
+
+This project requires the setup of a PostgreSQL BigQuery server where you will be able to run these seeds, models and tests. I used [this great tutorial](https://cloud.google.com/sql/docs/postgres/create-instance#create-2nd-gen) to set up my PostgreSQL container on BigQuery with dbt.
+
+The project has custom configuration instructions for the dbt profiles.yml file, which is covered in [dbt documentation](https://docs.getdbt.com/reference/profiles.yml/) if the tutorial isn't enough.
 
 ### How to Run the Project
 #### Step 1.
