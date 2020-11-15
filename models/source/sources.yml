@@ -3,7 +3,7 @@ version: 2
 
 sources:
   - name: seed_db
-    database: starlit-complex-295117
+    database: INSTANCE CONNECTION NAME FROM BIG QUERY
     schema: postgres
 
     quoting:
