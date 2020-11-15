@@ -9,6 +9,7 @@ Welcome to the dbtTestExamples project!
 ### How to Run the Project
 #### Step 1.
 Create a Big Query project, and subsequently a PostgreSQL Resource inside the project. 
+
 To run this project, you'll need the following from your Big Query SQL instance: 
 - The instance connection name (usually something like "jenny-cassette-8675309"), called "project" in profiles.yml
 - The Service Account JSON key for your specific project (a downloadable JSON key you'll reference), called a "keyfile" in profiles.yml
@@ -16,8 +17,11 @@ To run this project, you'll need the following from your Big Query SQL instance:
 
 #### Step 2.
 Clone this repo to your machine. 
+
 Now, you'll bring your Big Query values into profiles.yml and sources.yml.
+
 Sources.yml is easy; you just need to enter the database name (instance connection name).
+
 Profiles.yml is a little more complex so you should just copy and paste the below profile, then enter the right values for your Big Query keyfile and project.
 
        dbt_example_db:
@@ -59,6 +63,7 @@ There are a few ways to do this. If you want to run everything, use:
 Alternatively, you can choose to run just schema or data tests using these commands: 
 
     dbt test --data
+    
     dbt test --schema
 
 ### I already know dbt, can I just jump in? 
