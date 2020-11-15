@@ -1,0 +1,38 @@
+version: 2
+
+models:
+  - name: statistics
+
+    columns:
+
+  # This checks that there are no null values in the username column
+      - name: username
+        tests:
+          - not_null
+          - unique
+
+  # This checks that there are no null values in the date_joined column
+      - name: date_joined
+        tests:
+          - not_null
+
+  # This checks that there are no null values in the username column
+      - name: email
+        tests:
+          - not_null
+          - unique
+
+  # This checks that there are no null values in the username column
+      - name: total_kills
+        tests:
+          - not_null
+
+  # This checks that there are no null values in the username column
+      - name: total_deaths
+        tests:
+          - not_null
+
+  # This checks that there are no null values in the username column
+      - name: total_damage_done
+        tests:
+          - not_null
