@@ -19,10 +19,3 @@ target-path: "target"  # directory which will store compiled SQL files
 clean-targets:         # directories to be removed by `dbt clean`
     - "target"
     - "dbt_modules"
-
-# Building all models in the game_stats directory
-models:
-  dbtTestExamples:
-      # Applies to all files under models/game_stats/
-      game_stats:
-          materialized: schema

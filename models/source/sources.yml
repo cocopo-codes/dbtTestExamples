@@ -1,0 +1,73 @@
+
+version: 2
+
+sources:
+  - name: seed_db
+    database: starlit-complex-295117
+    schema: postgres
+
+    quoting:
+      database: false
+      schema: false
+      identifier: false
+
+    tables:
+      - name: game_log
+        columns:
+          - name: username
+            tests:
+              - not_null
+
+          - name: deaths
+            tests:
+              - not_null
+
+          - name: kills
+            tests:
+              - not_null
+
+          - name: assists
+            tests:
+              - not_null
+
+          - name: game_start
+            tests:
+              - not_null
+
+          - name: game_end
+            tests:
+              - not_null
+
+          - name: damage_done
+            tests:
+              - not_null
+
+          - name: damage_taken
+            tests:
+              - not_null
+
+          - name: win
+            tests:
+              - not_null
+
+      - name: games_users
+        columns:
+          - name: username
+            tests:
+              - not_null
+
+          - name: first_name
+            tests:
+              - not_null
+
+          - name: last_name
+            tests:
+              - not_null
+
+          - name: email
+            tests:
+              - not_null
+
+          - name: date_joined
+            tests:
+              - not_null
