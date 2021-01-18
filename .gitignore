@@ -2,3 +2,11 @@
 target/
 dbt_modules/
 logs/
+.idea/workspace.xml
+.idea/vcs.xml
+.idea/modules.xml
+.idea/misc.xml
+.idea/dbtTestExamples.iml
+.idea/dataSources.xml
+.idea/$PRODUCT_WORKSPACE_FILE$
+.idea/sqldialects.xml

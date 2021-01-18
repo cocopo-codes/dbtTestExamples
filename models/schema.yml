@@ -2,37 +2,40 @@ version: 2
 
 models:
   - name: statistics
-
+    description: This view shows the aggregated statistics for all game users.
     columns:
-
-  # This checks that there are no null values in the username column
+  # This tests the username column
       - name: username
+        description: This is a customer's chosen username. It cannot be changed. In the Statistics view, this username field is joined from the games and users tables.
         tests:
           - not_null
           - unique
-
-  # This checks that there are no null values in the date_joined column
+          - relationships:
+             to: ref('game_log_vw')
+             field: username
+  # This tests the date_joined column
       - name: date_joined
+        description: User's signup date for the game.
         tests:
           - not_null
-
-  # This checks that there are no null values in the username column
+  # This tests the email column
       - name: email
+        description: User's email address.
         tests:
           - not_null
           - unique
-
-  # This checks that there are no null values in the username column
+  # This tests the total_kills column
       - name: total_kills
+        description: Aggregate of user's total kills over all their played games.
         tests:
           - not_null
-
-  # This checks that there are no null values in the username column
+  # This tests the total_deaths column
       - name: total_deaths
+        description: Aggregate of user's total deaths over all their played games.
         tests:
           - not_null
-
-  # This checks that there are no null values in the username column
+  # This tests the total_damage_done column
       - name: total_damage_done
+        description: Aggregate of user's total damage done over all their played games.
         tests:
           - not_null
