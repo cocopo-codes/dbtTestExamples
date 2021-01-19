@@ -1,7 +1,9 @@
-Welcome to the dbtTestExamples project!
+## Welcome to the dbtTestExamples project!
 
-### Introduction and Critical Setup Notes
-This project has some simple dbt models along with related tests. Its purpose is to provide users with some quick examples of dbt schema and data tests. 
+### About This dbt Model Project
+This dbt model is based on the premise that three kids are playing a video game that involves game statistics. The model pulls from sources, transforms them into the stage folder, and then creates a "Statistics" view in the final output stage.
+
+Overall it has some simple dbt models along with related tests. Its purpose is to provide users with some quick examples of dbt schema and data tests. 
 
 In order to create this dbt model, you will want to install [dbt](https://docs.getdbt.com/docs/introduction) before you clone this repository
 
