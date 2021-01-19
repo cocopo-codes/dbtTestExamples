@@ -3,7 +3,7 @@ version: 2
 
 sources:
   - name: seed_db
-    database: INSTANCE CONNECTION NAME FROM BIG QUERY
+    database: starlit-complex-295117
     schema: postgres
 
     quoting:
@@ -12,7 +12,7 @@ sources:
       identifier: false
 
     tables:
-      - name: game_log
+      - name: games_src
         columns:
           - name: username
             tests:
@@ -50,7 +50,7 @@ sources:
             tests:
               - not_null
 
-      - name: games_users
+      - name: users_src
         columns:
           - name: username
             tests:
