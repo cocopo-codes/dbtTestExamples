@@ -2,5 +2,5 @@
 
 select total_damage_done
 	from {{ ref('statistics')}}
-	where username = 'horsegirl'
+	where gamertag = 'horsegirl'
 	and total_damage_done < 1800

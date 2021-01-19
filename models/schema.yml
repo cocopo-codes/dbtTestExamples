@@ -5,7 +5,7 @@ models:
     description: This view shows the aggregated statistics for all game users.
     columns:
   # This tests the username column
-      - name: username
+      - name: gamertag
         description: This is a customer's chosen username. It cannot be changed. In the Statistics view, this username field is joined from the games and users tables.
         tests:
           - not_null
