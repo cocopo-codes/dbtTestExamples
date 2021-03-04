@@ -3,8 +3,12 @@ version: 2
 
 sources:
   - name: seed_db
-    database: starlit-complex-295117
-    schema: postgres
+    # The database line is where your BigQuery database name should go to contain the schema.
+    # Enter it below:
+    database: (Your DB name)
+    # This schema should be under the database on line 7, where dbt will generate source tables there.
+    # Enter it below:
+    schema:  (Your schema name)
 
     quoting:
       database: false
