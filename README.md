@@ -8,7 +8,7 @@ Overall it has some simple dbt models along with related tests. Its purpose is t
 **Note:** This project uses BigQuery to contain the dbt project's data, so the instructions are specific to BigQuery database configuration.
 
 ### Before Running the Project (Prerequisites)
-In order to create this dbt model, you will want to **install [dbt]**(https://docs.getdbt.com/docs/introduction) before you clone this repository
+In order to create this dbt model, you will want to **install [dbt](https://docs.getdbt.com/docs/introduction)** before you clone this repository
 
 This project requires the **setup of a PostgreSQL BigQuery server** where you will be able to run these seeds, models and tests. I used [this guide](https://cloud.google.com/sql/docs/postgres/create-instance#create-2nd-gen) to set up my PostgreSQL container on BigQuery with dbt.
 
