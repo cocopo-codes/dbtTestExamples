@@ -2,13 +2,13 @@
 version: 2
 
 sources:
-  - name: seed_db
+  - name: DBTTESTEXAMPLES_DATABASE
     # The database line is where your BigQuery database name should go to contain the schema.
     # Enter it below:
-    database: (Your DB name)
+    database: DBTTESTEXAMPLES_DATABASE
     # This schema should be under the database on line 7, where dbt will generate source tables there.
     # Enter it below:
-    schema:  (Your schema name)
+    schema: DBTTESTEXAMPLES_SCHEMA
 
     quoting:
       database: false
