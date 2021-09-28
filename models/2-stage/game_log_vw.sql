@@ -1,12 +1,6 @@
-{{
-  config(
-    materialized = "view"
-  )
-}}
-
 with game_log as (
 
-    select * from  {{ref('games_src')}}
+    select * from  {{ref('games')}}
 )
 
 select * from game_log

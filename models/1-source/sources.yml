@@ -2,13 +2,9 @@
 version: 2
 
 sources:
-  - name: DBTTESTEXAMPLES_DATABASE
-    # The database line is where your BigQuery database name should go to contain the schema.
-    # Enter it below:
+  - name: seed
     database: DBTTESTEXAMPLES_DATABASE
-    # This schema should be under the database on line 7, where dbt will generate source tables there.
-    # Enter it below:
-    schema: DBTTESTEXAMPLES_SCHEMA
+    schema: DBTTESTEXAMPLES_REF
 
     quoting:
       database: false
@@ -16,7 +12,8 @@ sources:
       identifier: false
 
     tables:
-      - name: games_src
+      - name: games
+        schema: SRC
         columns:
           - name: username
             tests:
@@ -54,7 +51,8 @@ sources:
             tests:
               - not_null
 
-      - name: users_src
+      - name: users
+        schema: SRC
         columns:
           - name: username
             tests:
