@@ -28,7 +28,7 @@ Clone this repo to your machine.
 Bring your Snowflake values into profiles.yml (local under the hidden .dbt/ folder) and the project's [sources.yml](https://github.com/corissawex/dbtTestExamples/blob/86d41367884fa8d27383f099e0132b7f730b9ba4/models/1-source/sources.yml#L6).
 
 Profiles.yml is a little more complex so you should just copy and paste the below profile, then enter the right values for your Snowflake project.
-
+```
 dbt_example_db:
   target: dev
   outputs:
@@ -43,7 +43,7 @@ dbt_example_db:
       warehouse: DBTTESTEXAMPLES_WAREHOUSE
       schema: DBTTESTEXAMPLES_SCHEMA
       threads: 1
-
+```
 The name of this profile will match the dbt_project file and connect to your server instance.
 
 #### Step 3. 
