@@ -13,6 +13,7 @@ sources:
 
     tables:
       - name: games
+        description: The table with the game log information.
         schema: SRC
         columns:
           - name: username
@@ -52,6 +53,7 @@ sources:
               - not_null
 
       - name: users
+        description: The table holding game user information.
         schema: SRC
         columns:
           - name: username
