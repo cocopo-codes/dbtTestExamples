@@ -1,7 +1,7 @@
 
 # This is an example of a dbt project with some different kind of tests.
 name: 'dbtTestExamples'
-version: '1.0.0'
+version: '4.0.0'
 config-version: 2
 
 # This setting configures which "profile" dbt uses for this project.
@@ -11,7 +11,7 @@ profile: 'dbt_example_db'
 source-paths: ["models"]
 analysis-paths: ["analysis"]
 test-paths: ["tests"]
-data-paths: ["data"]
+data-paths: ["seeds"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
 
@@ -19,3 +19,42 @@ target-path: "target"  # directory which will store compiled SQL files
 clean-targets:         # directories to be removed by `dbt clean`
     - "target"
     - "dbt_modules"
+
+models:
+  enabled: true
+  bind: false
+  dbtTestExamples:
+      1-source:
+        enabled: true
+        schema: SRC
+        materialized: table
+
+      2-stage:
+        enabled: true
+        schema: STG
+        materialized: view
+
+      3-game_stats:
+        enabled: true
+        schema: OUTPUT
+        materialized: view
+
+seeds:
+  enabled: true
+  schema: REF
+  dbtTestExamples:
+      game_log:
+        enabled: true
+        quote_columns: true
+      games_users:
+        enabled: true
+        quote_columns: true
+
+tests:
+  dbtTestExamples:
+      games:
+        enabled: false
+      statistics:
+        enabled: true
+      users:
+        enabled: true
