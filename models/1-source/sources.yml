@@ -4,7 +4,7 @@ version: 2
 sources:
   - name: seed
     database: MEDEA
-    schema: MEDEA_ANALYTICS_REF
+    schema: MEDEA_ANALYTICS_SRC
 
     quoting:
       database: false
@@ -52,7 +52,7 @@ sources:
             tests:
               - not_null
 
-      - name: users
+      - name: games_users
         description: The table holding game user information.
         schema: SRC
         columns:
