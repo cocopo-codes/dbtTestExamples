@@ -3,8 +3,8 @@ version: 2
 
 sources:
   - name: seed
-    database: DBTTESTEXAMPLES_DATABASE
-    schema: DBTTESTEXAMPLES_REF
+    database: MEDEA
+    schema: MEDEA_ANALYTICS_REF
 
     quoting:
       database: false
