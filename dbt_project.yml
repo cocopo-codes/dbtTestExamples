@@ -5,7 +5,7 @@ version: '4.0.0'
 config-version: 2
 
 # This setting configures which "profile" dbt uses for this project.
-profile: 'dbt_example_db'
+profile: 'dev'
 
 # These configurations specify where dbt should look for different types of files.
 model-paths: ["models"]
