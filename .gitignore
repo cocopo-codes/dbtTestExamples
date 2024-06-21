@@ -4,3 +4,4 @@ dbt_modules/
 logs/
 .idea/
 .venv/
+*.DS_Store
